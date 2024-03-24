@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first} ~\n\nI am Anime News Post Bot for <a href = 'https://t.me/Latest_Anime_newz'>This Channel</a>, Click below Button to Join My Anime News Channel.\n\n🤖 Devloper: @Shidoteshika1</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "").split()):
+    for x in (os.environ.get("ADMINS", "6376328008").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
