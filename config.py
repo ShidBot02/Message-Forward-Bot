@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first} ~\n\nI am Anime News Post Bot for <a href = 'https://t.me/Latest_Anime_newz'>This Channel</a>, Click below Button to Join My Anime News Channel.\n</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first} ~\n\nI am an Auto Anime News Post Bot Specifically for <a href = 'https://t.me/Latest_Anime_newz'>This Channel</a>.\nClick below Button to Join My Anime News Channel and See my Power there.\n</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "6376328008").split()):
