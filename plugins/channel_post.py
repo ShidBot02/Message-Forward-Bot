@@ -11,7 +11,15 @@ from helper_func import encode
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.command(['start','users','broadcast','batch','genlink','stats']))
 async def channel_post(client: Client, message: Message):
-    reply_text = await message.reply_text("Please Wait...!", quote = True)
+    reply_text = await message.reply(text= "Please Wait...!", quote = True)
+    #try:
+    post_message = await message.copy(chat_id = client.db_channel.id, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Latest Anime News", url='https://t.me/Latest_Anime_Newz')]]) )
+
+    await reply_text.edit("Sended..")
+    #disable_notification=True
+
+
+"""reply_text = await message.reply_text("Please Wait...!", quote = True)
     try:
         post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
     except FloodWait as e:
@@ -48,4 +56,4 @@ async def new_post(client: Client, message: Message):
         await message.edit_reply_markup(reply_markup)
     except Exception as e:
         print(e)
-        pass
+        pass"""
