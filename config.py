@@ -39,7 +39,7 @@ PIC = os.environ.get("PIC", "")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello, {first} ~\n\n➪ I am an Auto Anime News Post Bot Specifically for <a href = 'https://t.me/Latest_Anime_newz'>This Channel</a> .\n\n➪ Click below Button to Join My Anime News Channel and See my Power there .\n</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello, {first} ~\n\n➪ I am an Auto Anime News Post Bot Specified Channel Only .\n\n➪ Click below Button to Join My Anime News Channel and See my Power there .\n</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
