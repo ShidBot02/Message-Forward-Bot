@@ -15,7 +15,7 @@
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": "1250450587"
+      "value": ""
     },
     "APP_ID":{
       "description": "your app id, take it from my.telegram.org",
@@ -27,14 +27,14 @@
     },
     "DATABASE_NAME":{
       "description": "Enter your DATABASE_NAME ",
-      "value": "filesharexbot"
+      "value": "forwardxbot"
     },
     "API_HASH":{
       "description": "your api hash, take it from my.telegram.org",
       "value": ""
     },
     "CHANNEL_ID":{
-      "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
+      "description": "(Channel id for forward Message to Channel) make a channel (database channel), then make the bot as admin in channel, and it's id",
       "value": "-100"
     },
     "FORCE_SUB_CHANNEL":{
@@ -43,7 +43,7 @@
     },
     "START_MESSAGE": {
       "description": "Optional: start message of bot, use HTML parsemode format",
-      "value": "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link."
+      "value": "<b>Hello, {first} ~\n\n➪ I am an Auto Anime News Post Bot Specified Channel Only .\n\n➪ Click below Button to Join My Anime News Channel and See my Power there .\n</b>"
     },
     "FORCE_SUB_MESSAGE": {
       "description": "Optional: Force Sub message of bot, use HTML parsemode format",
