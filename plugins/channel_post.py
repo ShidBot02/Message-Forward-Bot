@@ -13,7 +13,7 @@ from helper_func import encode
 async def channel_post(client: Client, message: Message):
     reply_text = await message.reply(text= "Please Wait...!", quote = True)
     #try:
-    post_message = await message.copy(chat_id = CHANNEL_ID, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("📰 Lᴀᴛᴇsᴛ Aɴɪᴍᴇ Nᴇᴡs 📰", url='https://t.me/Latest_Anime_Newz')]]) )
+    post_message = await message.copy(chat_id = CHANNEL_ID, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("📰 Sᴜʙsᴄʀɪʙᴇ Tᴏ Tᴏᴛᴛᴇɴ Tᴏᴍᴀᴛᴏᴇs 📰", url="https://t.me/the_rotten_tomatoes")]]) )
 
     await reply_text.edit("Sended..")
     #disable_notification=True
